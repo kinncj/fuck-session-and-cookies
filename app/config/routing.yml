@@ -2,7 +2,9 @@ app:
     resource: @AppBundle/Controller/
     type:     annotation
 
-api_login_check:
-   path: /api/login_check
+login:
+    pattern: /api/login
+    defaults: { _controller: AppBundle:Security:login }
 
-   #https://github.com/gfreeau/GfreeauGetJWTBundle
+login_check:
+    pattern: /api/login_check

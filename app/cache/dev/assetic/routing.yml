@@ -1,5 +1,0 @@
-_assetic:
-    resource: .
-    type: assetic
-_app:
-    resource: /Users/kinncj/Dev/Github/kinncj/fuck-session-and-cookies/app/config/routing_dev.yml
