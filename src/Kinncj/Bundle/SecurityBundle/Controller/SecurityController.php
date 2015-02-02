@@ -1,6 +1,6 @@
 <?php
 
-namespace AppBundle\Controller;
+namespace Kinncj\Bundle\SecurityBundle\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\Security\Core\SecurityContext;
@@ -19,8 +19,7 @@ class SecurityController extends Controller
             $error = $session->get(SecurityContext::AUTHENTICATION_ERROR);
         }
 
-        return $this->render('AppBundle:Security:login.html.twig', array(
-            // last username entered by the user
+        return $this->render('KinncjSecurityBundle:Security:login.html.twig', array(
             'last_username' => $session->get(SecurityContext::LAST_USERNAME),
             'error'         => $error,
         ));

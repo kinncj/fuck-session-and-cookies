@@ -13,4 +13,6 @@ php -S 127.0.0.1:80 app_dev.php
 
 * Go to ```http://localhost/api/login```
 * Login as any in_memory user at security.yml
-* Send the token through a header "Authorization: bearer {token}" or query string ?bearer={token} to /api/example
+* There are 2 examples:
+** 1st - Send the request through query string
+** 2nd - Stores the token in the localStorage, goes to an example link, get the token from localStorage and send through Header
